@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuval Peress</title>
+  <meta name="description" content="Yuval Peress: embedded systems and open-source engineer. Contributor to Zephyr RTOS and Pigweed; founder at Golem Defense Industries.">
+  <link rel="canonical" href="https://yperess.com/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="wrap hero">
+    <p class="eyebrow">Boulder, CO</p>
+    <h1>Yuval Peress</h1>
+    <p class="lede">Embedded systems and open-source software engineer. I work on the places where real-time operating systems, modern C++, and good tooling meet.</p>
+    <nav class="links" aria-label="Elsewhere">
+      <a href="https://github.com/yperess">GitHub</a>
+      <a href="https://golemdi.com">Golem DI</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="zephyr">
+      <h2>Zephyr RTOS</h2>
+      <p>I have 119 merged pull requests in <a href="https://github.com/zephyrproject-rtos/zephyr">zephyrproject-rtos/zephyr</a>, spanning drivers, the test infrastructure, and C++ support.</p>
+      <ul class="cards">
+        <li>
+          <h3>C++ support</h3>
+          <p>Fixes for compiler warnings, C++ version detection, and C++ initialization of ADC channel configuration, plus support for mocked <code>__atomic_compare_exchange_*</code> builtins.</p>
+        </li>
+        <li>
+          <h3>Testing and tooling</h3>
+          <p>gtest 1.15.0 support, a fix for the gTest harness in Twister, better gcov symlink handling, and clearer ztest skip logging.</p>
+        </li>
+        <li>
+          <h3>Drivers and RTIO</h3>
+          <p>A default I2C submit handler for RTIO, an NPCX I2C controller driver, I2C shell fixes, and ESP32 ADC fixes.</p>
+        </li>
+        <li>
+          <h3>Build system</h3>
+          <p>Custom sysroot support for <code>native_sim</code> builds.</p>
+        </li>
+      </ul>
+      <p class="more"><a href="https://github.com/zephyrproject-rtos/zephyr/pulls?q=is%3Apr+author%3Ayperess+is%3Amerged">All merged pull requests</a></p>
+    </section>
+
+    <section id="pigweed">
+      <h2>Pigweed</h2>
+      <p><a href="https://pigweed.dev">Pigweed</a> is Google's collection of embedded libraries and tooling. I work on its Zephyr integration and am listed as an owner of the <code>pw_log_zephyr</code>, <code>pw_chrono_zephyr</code>, and <code>pw_sync_zephyr</code> modules.</p>
+      <ul class="cards">
+        <li>
+          <h3>zephyr-pigweed</h3>
+          <p>A public tutorial that shows how to use Pigweed's C++ libraries inside a Zephyr project: West manifest setup, <code>pw::StringBuffer</code>, <code>PW_LOG_INFO()</code>, <code>pw::containers::FlatMap</code>, and gTest unit tests run through Twister on QEMU.</p>
+          <p class="more"><a href="https://github.com/yperess/zephyr-pigweed">View on GitHub</a></p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="golem">
+      <h2>Golem Defense Industries</h2>
+      <p><a href="https://golemdi.com">Golem DI</a> is a defense and security company focused on forging the future of security through impenetrable defense solutions.</p>
+    </section>
+
+    <section id="oss">
+      <h2>Other open source</h2>
+      <p>My <a href="https://github.com/yperess">GitHub profile</a> has everything else, including Android sample projects built with Dagger 2, MVVM, and Kotlin.</p>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>&copy; 2026 Yuval Peress</p>
+  </footer>
+</body>
+</html>
